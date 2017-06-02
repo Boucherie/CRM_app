@@ -7,6 +7,7 @@ end
 
 get '/contacts' do
   @contact_list = Contact.all
+  @link = "https://www.facebook.com"
   erb :contacts
 end
 

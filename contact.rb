@@ -17,7 +17,7 @@ class Contact < ActiveRecord::Base
   end
 
   def full_records
-    "#{first_name}, #{last_name}, #{email}, #{note}"
+    "#{first_name} #{last_name}, #{email}, #{note}"
   end
 end
 
