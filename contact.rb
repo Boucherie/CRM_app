@@ -1,7 +1,6 @@
+gem "activerecord", "=4.2.8"
 require 'active_record'
 require 'mini_record'
-
-gem "activerecord", "=4.2.7"
 
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'crm.sqlite3')
 

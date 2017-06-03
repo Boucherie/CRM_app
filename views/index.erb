@@ -1,3 +1,5 @@
-<h1>Welcome to My CRM</h1>
+<p>There are <span><%= "#{Contact.length}"%></span> contacts</p>
 
-<h2><a href='/contacts'>My Contacts</a></h2>
+<% @contact_list.each do |contact| %>
+  <p><%= contact.first_name %><%= contact.last_name %>(<%= contact.email %>) </p>
+<% end %>
