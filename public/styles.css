@@ -15,6 +15,8 @@ header {
   text-align: center;
   display: block;
   margin: auto;
+  background-color: #434343;
+  color: white;
 }
 
 nav {
@@ -51,6 +53,7 @@ footer {
   color: white;
   text-align: center;
   margin: auto;
+  padding: 0.25em;
 }
 
 h5 {
@@ -62,17 +65,26 @@ p {
 font-size: 14px;
 }
 
+.contact_summary {
+  display: block;
+  background-color: #FF0080;
+  padding: 0.25em;
+}
+
 .contact_list {
   margin: 10px auto;
 }
 
 .contact_list ul{
-  list-style-type: none;
+
 }
 .contact_list li {
   display: block;
   background-color: turquoise;
   text-align: left;
+  padding: 0.25em;
+  padding-left: 1em;
+  list-style-type: none;
 }
 
 
