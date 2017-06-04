@@ -10,11 +10,14 @@ get '/contacts' do
   @contact_list = Contact.all
 
   @link = "https://www.facebook.com"
+
   erb :contacts
 end
 
 get '/contacts/:id' do
-  erb :show_contact 
+  @contact = Contact.find(params[:id].to_i)
+  
+  erb :show_contact
 end
 
 get '/about' do
