@@ -37,9 +37,9 @@ nav > a {
   color: white;
 }
 
-li {
-
-
+img {
+  display: block;
+  margin: 10px auto;
 }
 
 main {
