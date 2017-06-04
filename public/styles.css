@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: Arial, Helvetica;
+  max-width: 1000px;
+
+
+}
+
+header {
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+nav {
+
+  display: block;
+  width: auto;
+  text-align: center;
+
+}
+
+nav > a {
+  margin-top: 0.25em;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em;
+  background-color: black;
+  color: white;
+}
+
+li {
+
+
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+footer {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+h5 {
+font-size: 10px;
+
+}
+
+p {
+font-size: 14px;
+}
+
+.contact_list {
+  margin: 10px auto;
+}
+
+.contact_list ul{
+  list-style-type: none;
+}
+.contact_list li {
+  display: block;
+  background-color: turquoise;
+  text-align: left;
+}
+
+
+.number {
+  border-bottom: 2px solid yellow;
+}

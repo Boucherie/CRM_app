@@ -2,11 +2,13 @@ require_relative 'contact'
 require 'sinatra'
 
 get '/' do #root
+@contact_list = Contact.all
   erb :index
 end
 
 get '/contacts' do
   @contact_list = Contact.all
+
   @link = "https://www.facebook.com"
   erb :contacts
 end

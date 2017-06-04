@@ -1,9 +1,13 @@
-<h1>Contacts</h1>
+
+<p>There are <span class ="number"><%= @contact_list.size %></span> contacts in the CRM</p>
 
 <ul>
-  <% @contact_list.each do |contact| %>
-    <li> <%= contact.full_records %> </li>
-  <% end %>
-</ul>
+<% @contact_list.each do |contact| %>
+  <div class="contact_list">
 
-<p><a href='/'>Home page</a></p>
+  <li><p> <%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>)</br>
+  <h5><a href="#">Edit</a> | <a href="#">Delete</a><h5</li>
+
+  </div>
+  </ul>
+<% end %>
