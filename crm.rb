@@ -20,6 +20,7 @@ get '/contacts/new' do
   erb :new_contact
 end
 
+
 get '/contacts/:id/edit' do
   # raise @contact.inspect
   #binding.pry
@@ -44,6 +45,7 @@ get '/about' do
   erb :about
 end
 
+
 post '/contacts' do
   Contact.create(
   first_name: params[:first_name],
@@ -67,6 +69,7 @@ put '/contacts/:id' do
     raise Sinatra::NotFound
   end
 end
+
 
 delete '/contacts/:id' do
   @contact = Contact.find_by(id: params[:id].to_i)
