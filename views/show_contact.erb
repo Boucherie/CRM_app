@@ -1,3 +1,12 @@
 <img src="http://unsplash.it/200/300?random">
 
 <h1><%= @contact.first_name %> <%= @contact.last_name %></h1>
+
+<form action='/contacts/<%= @contact.id %>' method='post'>
+  <input type="hidden" name="_method" value="delete">
+  <p>First Name: <input type="text" name="first_name" value="<%=@contact.first_name %>"></p>
+  <p>Last Name: <input type="text" name="last_name" value="<%= @contact.last_name %>"></p>
+  <p>Email: <input type="text" name="email" value="<%= @contact.email %>"></p>
+  <p>Note: <input type="text" name="note" value="<%= @contact.note %>"></p>
+  <button type="submit" value="Delete Contact">Delete Contact</button>
+</form>
