@@ -6,8 +6,6 @@ body {
   margin: auto;
   font-family: Arial, Helvetica;
   max-width: 1000px;
-
-
 }
 
 header {
@@ -17,7 +15,10 @@ header {
   margin: auto;
   background-color: #434343;
   color: white;
+  font-weight: bold;
 }
+
+
 
 nav {
 
@@ -62,7 +63,7 @@ font-size: 10px;
 }
 
 p {
-font-size: 14px;
+font-size: 18px;
 }
 
 .contact_summary {
